@@ -25,7 +25,7 @@ input.onButtonPressed(Button.A, function () {
     loopCounterside = 0
     sprite = game.createSprite(0, 0)
     sprite.set(LedSpriteProperty.X, loopCounterside)
-    // move right 
+    // loop to move the sprite around
     while (loopCounterbox <= 3) {
         while (loopCounterside <= 5) {
             sprite.move(1)
@@ -36,6 +36,7 @@ input.onButtonPressed(Button.A, function () {
         loopCounterside = 0
         loopCounterbox++
     }
+    //reset 
     sprite.delete()
     basic.showIcon(IconNames.Happy)
 })
